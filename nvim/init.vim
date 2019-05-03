@@ -20,6 +20,7 @@ set list
 colorscheme gruvbox
 set mouse=a
 set background=dark
+set clipboard=unnamedplus
 
 let mapleader = ","
 map <Leader>/ :nohlsearch<CR>
