@@ -21,6 +21,8 @@ colorscheme gruvbox
 set mouse=a
 set background=dark
 set clipboard=unnamedplus
+filetype plugin indent on
+hi Todo ctermfg=bg ctermbg=cyan
 
 let mapleader = ","
 map <Leader>/ :nohlsearch<CR>

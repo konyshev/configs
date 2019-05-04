@@ -14,4 +14,4 @@ if ! [ -x "$(command -v nvim)" ]; then
 fi
 
 cp init.vim ~/.config/nvim/init.vim
-nvim -es -c PlugInstall
+nvim --headless +PlugInstall +qa
