@@ -1,6 +1,7 @@
 "configuration for vim-plug https://github.com/junegunn/vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
 Plug 'easymotion/vim-easymotion'
@@ -8,8 +9,19 @@ call plug#end()
 
 
 "settings generic
+set nocompatible
+syntax enable
+
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matching files when we tab complete
+set wildmenu
+
+set foldmethod=manual
 set number relativenumber
-set tabstop=2 expandtab
+set tabstop=4 expandtab
 set shiftwidth=4 
 set autoindent
 set smartindent
@@ -21,11 +33,21 @@ colorscheme gruvbox
 set mouse=a
 set background=dark
 set clipboard=unnamedplus
+set splitbelow splitright
 filetype plugin indent on
 hi Todo ctermfg=bg ctermbg=cyan
 
 let mapleader = ","
+" No highlight
 map <Leader>/ :nohlsearch<CR>
+" Paste without replace register by old value
+vnoremap P "_dP
+
+" Shortcutting split navigation, saving a keypress:
+    map <C-h> <C-w>h
+    map <C-j> <C-w>j
+    map <C-k> <C-w>k
+    map <C-l> <C-w>l
 
 " Easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -64,4 +86,17 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
+
+"LaTex
+autocmd VimLeave *.tex !texclear %
+" Compile document, be it groff/LaTeX/markdown/etc.
+map <leader>c :w! \| !compiler <c-r>%<CR>
+" Open corresponding .pdf/.html or preview
+map <leader>p :!opout <c-r>%<CR><CR>
+
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
 
