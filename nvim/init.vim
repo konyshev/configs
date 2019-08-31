@@ -5,12 +5,9 @@ Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
-
-"settings generic
-set nocompatible
-syntax enable
 
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
@@ -100,3 +97,14 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
+map <C-n> :NERDTreeToggle<CR>
+
+"Vim hard mode
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
