@@ -1,6 +1,6 @@
 "configuration for vim-plug https://github.com/junegunn/vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
@@ -26,13 +26,12 @@ set incsearch
 set hlsearch
 set smartcase
 set list
-colorscheme gruvbox
+colorscheme nord
 set mouse=a
 set background=dark
 set clipboard=unnamedplus
 set splitbelow splitright
 filetype plugin indent on
-hi Todo ctermfg=bg ctermbg=cyan
 
 let mapleader = ","
 " No highlight
