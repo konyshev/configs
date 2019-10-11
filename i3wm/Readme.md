@@ -1,1 +1,1 @@
-cp config ~/.config/i3/config
+* Config location `~/.config/i3/config`
