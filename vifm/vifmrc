@@ -1,0 +1,20 @@
+" copy files to the opposite pane
+nmap yy :!cp %f %D<cr>
+
+" show all bookmarks
+nmap bb :marks <cr>
+
+" move files to the opposite pane
+nmap dd :!mv %f %D<cr>
+
+" make a backup copy file in the same pane
+nmap yp :clone <cr>
+
+" spacebar to select files; same as t (tag)
+nmap <space> t
+
+" quicker command line mode
+nmap ; :
+
+" quicker quitting program; it will resume where you left off
+nmap q ZZ
