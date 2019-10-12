@@ -1,4 +1,5 @@
 Notes based on https://github.com/gotbletu/shownotes/blob/master/vifm.txt
+color theme should be located in $HOME/.vifm/colors/
 
 1. basic hotkeys
 

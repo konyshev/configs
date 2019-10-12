@@ -18,3 +18,5 @@ nmap ; :
 
 " quicker quitting program; it will resume where you left off
 nmap q ZZ
+
+colorscheme istib-solarized-dark
