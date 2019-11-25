@@ -1,6 +1,7 @@
 "configuration for vim-plug https://github.com/junegunn/vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+"Plug 'arcticicestudio/nord-vim'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mkitt/tabline.vim'
@@ -26,7 +27,7 @@ set incsearch
 set hlsearch
 set smartcase
 set list
-colorscheme nord
+colorscheme gruvbox
 set mouse=a
 set background=dark
 set clipboard=unnamedplus
@@ -97,13 +98,3 @@ augroup remember_folds
 augroup END
 
 map <C-n> :NERDTreeToggle<CR>
-
-"Vim hard mode
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>

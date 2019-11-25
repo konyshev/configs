@@ -11,7 +11,7 @@
 # #---Basic Definitions---# #
 for_window [class="^.*"] border pixel 2
 set $term --no-startup-id $TERMINAL
-set $mod Mod4
+set $mod Mod1
 set $shutdown sudo -A shutdown --poweroff now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
@@ -29,7 +29,7 @@ exec --no-startup-id unclutter
 
 bar {
     font pango:mono 10
-    status_command i3blocks
+#    status_command i3blocks
     position top
     mode dock
     modifier None
