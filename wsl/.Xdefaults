@@ -1,0 +1,65 @@
+! urxvt
+URxvt*buffered: true
+URxvt*cursorBlink: false
+URxvt*underlineColor: yellow
+URxvt*font:  xft:inconsolata:size=12:antialias=true
+URxvt*depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*scrollstyle: plain
+URxvt*loginShell: false
+Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+URxvt*saveLines: 5000
+URxvt*termName: rxvt-unicode
+URxvt.matcher.button: 1
+
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
+
+! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings (optional)
+URxvt.keysym.C-M-c:    builtin-string:
+URxvt.keysym.C-M-v:    builtin-string:
+
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
+! I dont know why, but I needed to use hex keysym values to get it to work
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
+
+#define c00	#282828
+#define c01	#cc241d
+#define c02	#98971a
+#define c03	#d79921
+#define c04	#458588
+#define c05	#b16286
+#define c06	#689d6a
+#define c07	#a89984
+#define c08	#928374
+#define c09	#fb4934
+#define c10	#b8bb26
+#define c11	#fabd2f
+#define c12	#83a598
+#define c13	#d3869b
+#define c14	#8ec07c
+#define c15	#ebdbb2
+
+*background:            c00
+*foreground:            c15
+
+*.color0: c00
+*.color1: c01
+*.color2: c02
+*.color3: c03
+*.color4: c04
+*.color5: c05
+*.color6: c06
+*.color7: c07
+*.color8: c08
+*.color9: c09
+*.color10: c10
+*.color11: c11
+*.color12: c12
+*.color13: c13
+*.color14: c14
+*.color15: c15

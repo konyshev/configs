@@ -1,5 +1,4 @@
-Config files for:
- - i3wm
- - vim
+Config files for debian in wsl:
+ - i3
+ - nvim
  - urxvt (in .Xdefaults)
- - vifm
