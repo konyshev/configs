@@ -12,6 +12,8 @@ do
 		# Copy files one by one
 		cp -vR ~/.bashrc .
 		cp -vR ~/.bash_aliases .
+		cp -vR ~/.bash_profile .
+		cp -vR ~/.profile .
 		cp -vR ~/.Xdefaults .
 		cp -vR ~/.runi3 .
 		# Copy folders
@@ -26,6 +28,8 @@ do
 		# Copy files one by one
 		cp -vR ./.bashrc ~
 		cp -vR ./.bash_aliases ~
+		cp -vR ./.bash_profile ~
+		cp -vR ./.profile ~
 		cp -vR ./.Xdefaults ~
 		cp -vR ./.runi3 ~
 		# Copy folders
@@ -34,7 +38,7 @@ do
 	elif [ "$arg" == "--install" ] || [ "$arg" == "-i" ]
     then
         echo "Install utils"
-        apt-get install curl
+        # apt-get install curl
         # Install vim-plug for vim
         curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	else
