@@ -115,3 +115,14 @@ fi
 # For Xserver
 export DISPLAY=:0.0
 export LIBGL_ALWAYS_INDIRECT=1
+
+# For Proxy
+export http_proxy='http://dumbledore.actimage.int:80'
+export https_proxy='https://dumbledore.actimage.int:80'
+
+# go to home folder
+cd
+
+if [ -f ~/.profile ]; then
+    . ~/.profile
+fi

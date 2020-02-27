@@ -1,4 +1,5 @@
 #!/bin/sh
 xrdb -merge ~/.Xdefaults
-setxkbmap -layout 'us,ru' -variant 'altgr-intl,winkeys' -option grp:alt_shift_toggle
+#setxkbmap -layout 'us,ru' -variant 'altgr-intl,winkeys' -option grp:alt_shift_toggle
+setxkbmap -layout 'us' -variant 'altgr-intl'
 exec i3

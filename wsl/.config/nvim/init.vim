@@ -3,7 +3,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
 "Plug 'arcticicestudio/nord-vim'
 Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'jiangmiao/auto-pairs'
 Plug 'pearofducks/ansible-vim'
 Plug 'mkitt/tabline.vim'
 Plug 'easymotion/vim-easymotion'

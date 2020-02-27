@@ -18,6 +18,7 @@ do
 		cp -vR ~/.runi3 .
 		# Copy folders
 		cd ~ && cp -vR --parents \
+			.config/zathura/* \
 			.config/i3/* \
 			.config/nvim/* \
 			./repos/configs/wsl/ && cd - > /dev/null
